@@ -8,10 +8,10 @@ using namespace std;
 void url_select(const vector<string>& url_list) {
 	int input_number;
 
-	cout << "表示するURLの番号を入力してください" << endl;
+	cout << "表示するURL番号を入力してください" << endl;
 	cout << "番号： ";
 	if (!(cin >> input_number)) {
-		cout << "無効な入力です（数字を入力してください）" << endl;
+		cout << "無効な値です（URL番号を入力してください）" << endl;
 		return;
 	}
 
