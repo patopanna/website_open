@@ -6,7 +6,7 @@ website_list.txtに記載したURLをコマンドプロンプトやターミナ�
 
 1. website_list.txtにURLを入力する
 
-2. application.cppを実行する
+2. website_open.exeを実行する
 
 3. URLリストから表示したいURL番号を入力する
 
