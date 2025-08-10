@@ -13,20 +13,20 @@ void url_select(const vector<string>& url_list) {
 	if (!(cin >> input_number)) {
 		cout << "無効な入力です（数字を入力してください）" << endl;
 		return;
-}
+	}
 
 	if (0 < input_number && input_number <= url_list.size()) {
 #ifdef _WIN32
 		system(("start chrome.exe " + url_list[input_number - 1]).c_str());
-#elif defined(__APPLE__)
-		system(("open " + url_list[input_number - 1]).c_str());
-#else
+#elif defined(__linux__)
 		system(("xdg-open " + url_list[input_number - 1]).c_str());
+#else
+		system(("open " + url_list[input_number - 1]).c_str());
 #endif
-	}
-	else {
-		cout << "入力された番号は無効です" << endl;
-	}
+		}
+		else {
+			cout << "入力された番号は無効です" << endl;
+		}
 }
 
 int main() {
