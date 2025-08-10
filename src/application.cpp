@@ -23,10 +23,10 @@ void url_select(const vector<string>& url_list) {
 #else
 		system(("open " + url_list[input_number - 1]).c_str());
 #endif
-		}
-		else {
-			cout << "入力された番号は無効です" << endl;
-		}
+	}
+	else {
+		cout << "入力された番号は無効です" << endl;
+	}
 }
 
 int main() {
