@@ -1,0 +1,1 @@
+g++ application.cpp -o website_open -fexec-charset=CP932
